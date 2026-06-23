@@ -1,0 +1,121 @@
+text,label
+I forgot my password,account
+I need to reset my campus password,account
+My login does not work,account
+I cannot sign in to the student portal,account
+My account is locked,account
+I cannot access my profile,account
+Please help me unlock my account,account
+The password reset link expired,account
+I changed phones and cannot log in,account
+My username is not recognized,account
+I need to update my account email,account
+Two factor code never arrives,account
+How do I change my login password,account
+My student portal says invalid password,account
+I cannot access my transcript page,account
+My account was disabled,account
+I need help with account recovery,account
+Login page keeps rejecting my credentials,account
+I forgot my campus username,account
+Reset my account because I cannot sign in,account
+The portal says my session is expired,account
+My profile information is wrong,account
+I cannot verify my account,account
+Password reset email went to old address,account
+My single sign on is blocked,account
+I cannot get into Canvas,account
+My school email account is locked,account
+I need to recover my login,account
+Why did my account sign me out,account
+Authentication code is not working,account
+My card was charged twice,billing
+I was charged twice for tuition,billing
+Need a refund for my payment,billing
+My payment did not post,billing
+Where can I see my invoice,billing
+Tuition bill looks incorrect,billing
+My scholarship is missing from bill,billing
+I need help with payment plan,billing
+Campus store charged my card,billing
+I paid but balance still shows,billing
+How do I update billing address,billing
+My receipt has the wrong amount,billing
+The fee was added twice,billing
+I need to dispute a charge,billing
+My refund has not arrived,billing
+Can I split my tuition payment,billing
+The payment portal rejected my card,billing
+I was billed after dropping a class,billing
+My account balance is too high,billing
+Need copy of my billing statement,billing
+Why is there a late fee,billing
+My card was declined during payment,billing
+Financial hold after I paid,billing
+Payment confirmation email missing,billing
+How do I pay lab fee,billing
+My invoice says payment pending,billing
+Refund for cancelled housing charge,billing
+I need tax receipt for tuition,billing
+Billing office says I owe money,billing
+Card charge appears on bank account,billing
+The application keeps crashing,technical
+The campus app will not open,technical
+The website is frozen,technical
+I cannot connect to campus wifi,technical
+The portal shows a server error,technical
+Video lecture will not load,technical
+My upload fails with an error,technical
+The page is loading very slowly,technical
+The app shows a blank screen,technical
+Printing system is offline,technical
+Classroom computer will not start,technical
+VPN connection keeps dropping,technical
+The form submit button does nothing,technical
+Course site gives a 404 error,technical
+My browser freezes on the quiz,technical
+The software installer fails,technical
+Audio is not working in Zoom,technical
+The campus map app crashes,technical
+I cannot connect to the lab printer,technical
+Website says service unavailable,technical
+File upload is stuck,technical
+Database tool will not launch,technical
+My laptop cannot join the network,technical
+App update failed overnight,technical
+Dashboard chart does not render,technical
+System error after password reset,technical
+The screen goes black after login,technical
+Wifi works on phone but not laptop,technical
+Online exam page crashed,technical
+Cannot open the course application,technical
+Where is the library,other
+What time does the gym open,other
+How do I reserve a study room,other
+Where can I get a parking permit,other
+When is the add drop deadline,other
+How do I contact academic advising,other
+Where is the dining hall,other
+Can I bring a guest to campus,other
+What are library hours,other
+How do I join a student club,other
+Where do I pick up my ID card,other
+When does the shuttle run,other
+How do I reserve event space,other
+What is the bookstore schedule,other
+Where is the health center,other
+How do I request a transcript,other
+Where can I find tutoring,other
+What day is orientation,other
+How do I apply for graduation,other
+Where is lost and found,other
+Can I change my meal plan,other
+When are final exams,other
+How do I book an advising appointment,other
+Where can visitors park,other
+What are campus office hours,other
+How do I register for intramurals,other
+Who do I ask about housing,other
+Where is the registrar office,other
+Can I get directions to science hall,other
+Is the library open on Sunday,other
