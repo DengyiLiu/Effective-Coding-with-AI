@@ -1,0 +1,76 @@
+skills:
+  repo_reconnaissance:
+    purpose: Understand relevant project structure before coding.
+    code_edit_allowed: false
+    inputs:
+      - task-contract.yaml
+      - context-packet.md
+      - project files
+    outputs:
+      - reconnaissance.md
+    success_criteria:
+      - identifies relevant files
+      - explains current booking and cancellation flow
+      - identifies current conflict logic
+      - lists existing tests and verification command
+      - names likely risks and minimal edit scope
+
+  implementation_planner:
+    purpose: Produce a minimal implementation plan.
+    code_edit_allowed: false
+    inputs:
+      - task-contract.yaml
+      - reconnaissance.md
+      - context-packet.md
+    outputs:
+      - implementation-plan.md
+    success_criteria:
+      - maps every acceptance criterion to implementation and tests
+      - lists proposed files to modify
+      - explains why each file must change
+      - states what will not change
+
+  implementer:
+    purpose: Implement only the approved plan.
+    code_edit_allowed: true
+    requires:
+      - approval.md
+    forbidden:
+      - adding dependencies without approval
+      - changing endpoint names without approval
+      - modifying scripts/verify.sh without approval
+      - deleting or weakening tests
+      - rewriting unrelated features
+    outputs:
+      - changed_files
+      - diff.patch
+
+  verifier:
+    purpose: Run deterministic checks and summarize evidence.
+    code_edit_allowed: false
+    command:
+      - bash scripts/verify.sh
+    outputs:
+      - verification-report.md
+    success_criteria:
+      - records command output
+      - maps evidence to acceptance criteria
+      - lists failures, fixes, and remaining limitations
+
+  reviewer:
+    purpose: Review the final diff from fresh context.
+    code_edit_allowed: false
+    inputs:
+      - task-contract.yaml
+      - implementation-plan.md
+      - approval.md
+      - diff.patch
+      - verification-report.md
+    outputs:
+      - ai-review.md
+    success_criteria:
+      - identifies missed acceptance criteria
+      - identifies unnecessary changes
+      - identifies weak or missing tests
+      - identifies deviations from approved plan
+      - groups findings by severity
