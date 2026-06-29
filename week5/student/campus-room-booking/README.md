@@ -46,6 +46,7 @@ scripts/
 docs/
   architecture.md
   api-contract.md
+  waitlist-spec.md
   commands.md
 ```
 
@@ -63,6 +64,8 @@ python -m pip install -r requirements.txt
 source .venv/bin/activate
 bash scripts/verify.sh
 ```
+
+The verification script compiles the app and runs the pytest suite.
 
 ## Run Server
 
@@ -87,3 +90,10 @@ Use the Week 5 workflow:
 contract -> reconnaissance -> plan -> approval -> implementation
 -> verification -> review -> decision
 ```
+
+Before planning the feature, read:
+
+- `docs/api-contract.md`
+- `docs/architecture.md`
+- `docs/waitlist-spec.md`
+- `AGENTS.md`

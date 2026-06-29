@@ -14,12 +14,17 @@ acceptance_criteria:
   - AC2: Occupied room/time requests create waitlisted bookings.
   - AC3: Waitlisted bookings preserve request order.
   - AC4: Cancelling a confirmed booking with no waitlist simply cancels it.
-  - AC5: Cancelling a confirmed booking with a waitlist promotes the earliest waitlisted request.
+  - AC5: Cancelling a confirmed booking with a waitlist promotes the earliest waitlisted request for the same room, start_time, and end_time.
   - AC6: Cancelling a waitlisted booking does not promote another booking.
   - AC7: Existing room listing behavior remains unchanged.
   - AC8: Existing confirmed booking behavior remains backward compatible.
   - AC9: Existing cancellation behavior remains backward compatible.
   - AC10: Tests cover the main state transitions.
+
+source_of_truth:
+  - docs/api-contract.md
+  - docs/architecture.md
+  - docs/waitlist-spec.md
 
 non_goals:
   - Do not add authentication.

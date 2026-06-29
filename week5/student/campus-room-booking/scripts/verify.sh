@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-python -m pytest
+python -m py_compile app/*.py
+python -m pytest -q

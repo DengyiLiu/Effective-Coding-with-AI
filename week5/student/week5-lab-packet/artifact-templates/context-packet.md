@@ -26,6 +26,8 @@ The app already supports:
 - `tests/`
 - `docs/api-contract.md`
 - `docs/architecture.md`
+- `docs/waitlist-spec.md`
+- `AGENTS.md`
 - `scripts/verify.sh`
 
 ## Verification Command

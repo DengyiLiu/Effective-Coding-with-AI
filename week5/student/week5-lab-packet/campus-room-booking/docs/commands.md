@@ -15,6 +15,8 @@ source .venv/bin/activate
 bash scripts/verify.sh
 ```
 
+The verification script compiles application files and runs the pytest suite.
+
 ## Run Tests Directly
 
 ```bash
@@ -39,3 +41,5 @@ http://127.0.0.1:8000/docs
 
 The project uses in-memory storage. Restarting the Python process resets rooms
 and bookings.
+
+Read `docs/waitlist-spec.md` before implementing the Week 5 feature.

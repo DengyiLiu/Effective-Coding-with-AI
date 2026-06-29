@@ -11,6 +11,18 @@ Campus Room Booking API
 Feature: Waitlist + Cancellation Promotion
 ```
 
+## Concept Framework
+
+Week 5 is not about writing a better one-shot prompt. It is about controlling
+AI coding work through a workflow.
+
+| Concept | Meaning in Week 5 |
+| --- | --- |
+| Prompt | A single instruction given to AI |
+| Skill | A bounded capability such as reconnaissance, planning, implementation, verification, or review |
+| Workflow | An ordered process with stages, artifacts, permissions, gates, and repair policy |
+| Harness | The control system around AI work: tests, scripts, templates, diffs, review, and evidence |
+
 ## Core Rule
 
 You must not directly ask AI to implement the feature.
@@ -21,6 +33,34 @@ You must execute the workflow:
 contract -> reconnaissance -> plan -> approval -> implementation
 -> verification -> review -> decision
 ```
+
+## Opening Demo: Bad Prompt vs Workflow Prompt
+
+Bad prompt:
+
+```text
+Add waitlist support to this FastAPI app.
+```
+
+Before coding, identify what could go wrong:
+
+- AI changes endpoint names.
+- AI adds unnecessary dependencies.
+- AI deletes or weakens tests.
+- AI modifies `scripts/verify.sh`.
+- AI implements waitlisting but forgets cancellation promotion.
+- AI rewrites storage or routing instead of making a small service-layer change.
+
+Workflow prompt:
+
+```text
+You are executing the repo_reconnaissance skill.
+Do not edit code.
+Read the task contract, context packet, docs, tests, and relevant project files.
+Return current behavior, relevant files, risks, and minimal edit scope.
+```
+
+The goal is to slow the work down enough that it becomes controllable.
 
 ## What You Are Building
 
@@ -40,6 +80,12 @@ Your feature:
 ```text
 If a room/time slot is already booked, create a waitlisted booking.
 When the confirmed booking is cancelled, promote the earliest waitlisted booking.
+```
+
+Read the detailed behavior rules before planning:
+
+```text
+docs/waitlist-spec.md
 ```
 
 ## Required Run Folder
@@ -83,6 +129,13 @@ bash scripts/verify.sh
 ```
 
 Record the result in your notes. The project should already pass.
+
+Also read:
+
+- `docs/api-contract.md`
+- `docs/architecture.md`
+- `docs/waitlist-spec.md`
+- `AGENTS.md`
 
 ## Stage 1: Task Contract
 
@@ -160,6 +213,8 @@ Read:
 - runs/week5-run-001/context-packet.md
 - docs/api-contract.md
 - docs/architecture.md
+- docs/waitlist-spec.md
+- AGENTS.md
 - project files
 
 Rules:
