@@ -1,0 +1,12 @@
+[project]
+name = "week6-mcp-demos"
+version = "0.1.0"
+description = "Five runnable Model Context Protocol demos"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.13.0",
+]
+
+[tool.uv]
+package = false

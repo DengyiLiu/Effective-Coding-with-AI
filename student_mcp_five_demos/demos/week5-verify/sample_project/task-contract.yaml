@@ -1,0 +1,13 @@
+project: waitlist-status-helper
+goal: Track waitlist entries and produce simple status summaries.
+user: Admissions staff member
+requirements:
+  - Add a student by email and display name.
+  - Normalize email addresses by trimming spaces and lowercasing.
+  - Reject blank display names.
+  - Store status as waiting, admitted, or declined.
+  - Reject unknown statuses.
+  - Summarize how many students are in each status.
+verification:
+  command: bash scripts/verify.sh
+  expected: 15 tests pass
